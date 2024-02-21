@@ -2,6 +2,17 @@
 #include <iostream>
 #include <string>
 #include "user.h"
+#include "app.h"
+
+bool App::validateUsername(const std::string& username) {
+    // Implementation
+}
+
+bool App::validatePassword(const std::string& password) {
+    // Implementation
+}
+
+// The rest of your code...
 
 App::App() {}
 

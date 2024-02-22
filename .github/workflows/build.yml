@@ -25,10 +25,10 @@ jobs:
       - name: Run sonar-scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ sample }} # Replace 'd4668eb4eb7d711799d0c8c9d3bef09d8e4f8bb6' with the name of your SonarCloud token secret
+          SONAR_TOKEN: ${{sample}} # Replace 'sample' with the name of your SonarCloud token secret
         run: |
           sonar-scanner \
-            -Dsonar.projectKey=<sampleCPP> \
-            -Dsonar.projectName=<sampleCPP> \
-            -Dsonar.projectVersion=<1.0> \
+            -Dsonar.projectKey=sampleCPP \
+            -Dsonar.projectName=sampleCPP \
+            -Dsonar.projectVersion=1.0 \
             --define sonar.cfamily.build-wrapper-output="${{ env.BUILD_WRAPPER_OUT_DIR }}"

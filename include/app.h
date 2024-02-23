@@ -1,23 +1,18 @@
 #ifndef APP_H
 #define APP_H
-#include <string> // Add this line
+
+#include <string>
 
 class App {
 public:
-
-};
-class App {
-public:
-    bool validateUsername(const std::string& username); // Fix function signature
-    bool validatePassword(const std::string& password); // Fix function signature
-    App();
+    bool validateUsername(const std::string& username); // Corrected function signature
+    bool validatePassword(const std::string& password); // Corrected function signature
+    App(); // Constructor declaration
     void run();
 private:
     void mainMenu();
     void signup();
     void login();
-    bool validateUsername(const std::string& username);
-    bool validatePassword(const std::string& password);
 };
 
 #endif // APP_H

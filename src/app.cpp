@@ -1,18 +1,16 @@
 #include "app.h"
 #include <iostream>
 #include <string>
-#include "user.h"
-#include "app.h"
 
 bool App::validateUsername(const std::string& username) {
-    // Implementation
+    // Add validation logic as needed
+    return true; // Placeholder return value
 }
 
 bool App::validatePassword(const std::string& password) {
-    // Implementation
+    // Add validation logic as needed
+    return true; // Placeholder return value
 }
-
-// The rest of your code...
 
 App::App() {}
 
@@ -71,14 +69,4 @@ void App::login() {
 
     // Authenticate the user (not implemented)
     std::cout << "Login successful! Welcome, " << username << "!" << std::endl;
-}
-
-bool App::validateUsername(const std::string& username) {
-    // Add validation logic (not implemented)
-    return true;
-}
-
-bool App::validatePassword(const std::string& password) {
-    // Add validation logic (not implemented)
-    return true;
 }

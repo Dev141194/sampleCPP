@@ -25,7 +25,7 @@ jobs:
       - name: Run sonar-scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ sample }}
+          SONAR_TOKEN: ${{sample}}
         run: |
           sonar-scanner \
             -Dsonar.projectKey=Dev141194_sampleCPP \
